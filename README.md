@@ -39,6 +39,17 @@ var normalQueue = new raq.NormalQueue(QUEUE_NAME, [...]);
 > ...
 > ```
 
+#### Select
+
+To Select a db :
+
+```javascript
+normalQueue.select(db, function() {
+    console.log("db select success");
+});
+```
+
+
 #### Push
 
 To push a message to your queue, you may use this function:
@@ -138,6 +149,17 @@ var uniqueQueue = new raq.UniqueQueue(QUEUE_NAME, [...]);
 > new raq.UniqueQueue(QUEUE_NAME, unix_socket, options);
 > ...
 > ```
+
+
+#### Select
+
+To Select a db :
+
+```javascript
+normalQueue.select(db, function() {
+    console.log("db select success");
+});
+```
 
 #### Push
 
