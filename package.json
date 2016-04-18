@@ -1,6 +1,6 @@
 {
   "name": "redis-message-queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Redis Message Queue Middleware based on redis-as-queue by XadillaX",
   "main": "index.js",
   "directories": {
