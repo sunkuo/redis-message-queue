@@ -6,7 +6,7 @@ Note: This is A node.js package for regarding redis as a message queue, Based On
 ## Installation
 
 ```shell
-$ npm install redis-as-queue
+$ npm install redis-message-queue
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ Each value in unique queue is unique. If a new value that equals any value in th
 First you should require this package:
 
 ```javascript
-var raq = require("redis-as-queue");
+var rmq = require("redis-message-queue");
 ```
 
 ### Normal Queue
@@ -26,7 +26,7 @@ var raq = require("redis-as-queue");
 #### Create
 
 ```javascript
-var normalQueue = new raq.NormalQueue(QUEUE_NAME, [...]);
+var normalQueue = new rmq.NormalQueue(QUEUE_NAME, [...]);
 ```
 
 > **Note:** `[...]` is the option(s) to connect redis server. Refer to [node-redis document](https://www.npmjs.org/package/redis#redis-createclient-).
@@ -34,8 +34,8 @@ var normalQueue = new raq.NormalQueue(QUEUE_NAME, [...]);
 > Eg.
 >
 > ```javascript
-> new raq.NormalQueue(QUEUE_NAME, 6379, '127.0.0.1', {});
-> new raq.NormalQueue(QUEUE_NAME, unix_socket, options);
+> new rmq.NormalQueue(QUEUE_NAME, 6379, '127.0.0.1', {});
+> new rmq.NormalQueue(QUEUE_NAME, unix_socket, options);
 > ...
 > ```
 
@@ -137,7 +137,7 @@ Each message in unique queue is unique.
 #### Create
 
 ```javascript
-var uniqueQueue = new raq.UniqueQueue(QUEUE_NAME, [...]);
+var uniqueQueue = new rmq.UniqueQueue(QUEUE_NAME, [...]);
 ```
 
 > **Note:** `[...]` is the option(s) to connect redis server. Refer to [node-redis document](https://www.npmjs.org/package/redis#redis-createclient-).
@@ -145,8 +145,8 @@ var uniqueQueue = new raq.UniqueQueue(QUEUE_NAME, [...]);
 > Eg.
 >
 > ```javascript
-> new raq.UniqueQueue(QUEUE_NAME, 6379, '127.0.0.1', {});
-> new raq.UniqueQueue(QUEUE_NAME, unix_socket, options);
+> new rmq.UniqueQueue(QUEUE_NAME, 6379, '127.0.0.1', {});
+> new rmq.UniqueQueue(QUEUE_NAME, unix_socket, options);
 > ...
 > ```
 
