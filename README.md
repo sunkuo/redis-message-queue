@@ -1,6 +1,8 @@
 # Redis as Queue - Node.js SDK
 
-A node.js package for regarding redis as a message queue.
+Note: This is A node.js package for regarding redis as a message queue, Based On redis-as-queue by XadillaX
+[redis-as-queue](https://github.com/XadillaX/node-redis-as-queue)
+
 
 ## Installation
 
