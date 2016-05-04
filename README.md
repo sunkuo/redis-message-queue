@@ -1,6 +1,6 @@
 # Redis as Queue - Node.js SDK
 
-Note: This is A node.js package for regarding redis as a message queue, Based On [redis-as-queue by XadillaX](https://github.com/XadillaX/node-redis-as-queue)
+Note: This is A node.js package for regarding redis as a message queue, npm repo: https://www.npmjs.com/package/redis-message-queue
 
 
 ## Installation
@@ -277,6 +277,4 @@ normalQueue.destroy();
 ## Contribute
 
 You're welcome to pull requests!
-
-> 「雖然我覺得不怎麼可能有人會關注我」
 
